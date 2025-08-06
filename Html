@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sehrish Noor | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Sehrish Noor</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Sehrish</h1>
+      <p>Frontend Developer & Software Engineering Student</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/hero.png" alt="Hero Illustration" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <img src="images/profile.jpg" alt="Sehrish Noor" class="about-img" />
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I'm a 2nd-year Software Engineering student at GIKI with a passion for frontend development and UI/UX design. I love creating beautiful and user-friendly web applications that solve real problems.
+      </p>
+      <a href="cv.pdf" class="btn-outline" download>Download CV</a>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill"><i class="fab fa-js"></i><p>JavaScript</p></div>
+      <div class="skill"><i class="fab fa-git-alt"></i><p>Git</p></div>
+      <div class="skill"><i class="fab fa-react"></i><p>React</p></div>
+      <div class="skill"><i class="fas fa-pen-nib"></i><p>Canva</p></div>
+    </div>
+  </section>
+
+<section id="hobbies" class="hobbies">
+  <h2>Hobbies</h2>
+  <div class="hobby-list">
+    <div><i class="fas fa-book-reader"></i> Reading</div>
+    <div><i class="fas fa-laptop-code"></i> Coding</div>
+    <div><i class="fas fa-camera-retro"></i> Photography</div>
+    <div><i class="fas fa-music"></i> Music</div>
+    <div><i class="fas fa-biking"></i> Cycling</div>
+  </div>
+</section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <h3>Restaurant Website</h3>
+        <p>Fully responsive React-based UI for online ordering.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Task Manager</h3>
+        <p>A productivity app for managing daily tasks with local storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sehrish Noor</p>
+    <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+</body>
+</html>
