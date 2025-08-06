@@ -1,0 +1,260 @@
+/* Font and color theme */
+:root {
+  --primary: #222831;
+  --accent: #00adb5;
+  --bg-light: #eeeeee;
+  --text-dark: #333;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: var(--white);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.hero-img img {
+  max-width: 100%;
+  width: 350px;
+}
+
+/* Buttons */
+.btn, .btn-outline {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+}
+
+.btn:hover {
+  background: #019ca4;
+}
+
+.btn-outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: var(--bg-light);
+}
+
+.about-img {
+  width: 250px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Skills */
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--white);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill {
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill i {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+/* Projects */
+.projects {
+  padding: 4rem 2rem;
+  background: var(--white);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Contact */
+.contact {
+  padding: 4rem 2rem;
+  background: var(--bg-light);
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    margin-bottom: 1rem;
+  }
+}
+.hobbies {
+  padding: 4rem 2rem;
+  background: var(--white);
+  text-align: center;
+}
+
+.hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hobby-list div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-light);
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
